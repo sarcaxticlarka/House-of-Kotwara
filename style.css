@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+    /* font-family: "Bonheur Royale", cursive; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%; 
+     
+}
+
+.page1{
+    position: relative;
+    height: 100vh;
+    width: 100%; 
+}
+.page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page1cont{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.contain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #14141438;
+}
+
+.nav{
+    display: flex; 
+    align-items: center;
+    height: 80px;
+    width: 100%; 
+    justify-content: space-between;
+    color: white;
+}
+
+.navitem1{
+    padding: 0 2vw;
+    display: flex;
+    width: 50%; 
+    justify-content: space-between;
+}
+
+.nav svg{
+    height: 80%;
+    width: 5vw;
+}
+.navitemc{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.navitemc h4{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+.navitemc h4::before {
+    margin-bottom: -2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(251, 252, 163);
+    transition: width 0.3s ease; /* Adjust the transition speed as needed */
+}
+
+.navitemc h4:hover::before {
+    width: 100%;
+}
+.navitem2{
+    padding-right: 2.5vw;
+}
+.navitem2 button{
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 25px;
+    padding: 11px 20px;
+    font-size: 1.3vw;
+    color: white;
+    background-color: transparent;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.heading h1{
+    letter-spacing: -0.6vw;
+    font-weight: 700;
+    font-size: 7.5vw;
+    /* color: white; */
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    
+}
+ 
+.heading h4 {
+    letter-spacing: 0.4vw;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-family: "Bonheur Royale", cursive;
+}
+
+.page2{
+    height: 55vh;
+    width: 100%; 
+    overflow: hidden;
+}
+.movingtext{ 
+    margin-top: 5px; 
+    padding-top: 50px;
+    border-radius: 25px;
+    /* background: rgb(0, 72, 78); */
+    /* background: #b6ab8b6e; */
+    background-color: rgba(241, 82, 114, 0.96);
+    height: 55vh ;
+}
+.movingtext h1 {
+    border-top: 5px solid rgb(251, 252, 163);
+    border-bottom: 5px solid rgb(251, 252, 163);
+     color: white;
+    letter-spacing: -1.4vw;
+    font-size: 16vw;
+    white-space: nowrap;
+    display: inline-block;
+    animation: slideAnimation 45s linear infinite;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.page3{ 
+    margin-top: 4vw;
+    height: 90vh;
+    width: 100%; 
+    padding-top: 30px;
+    display: flex; 
+    margin-bottom: 4vw;
+}
+
+.pag3l{
+    padding-left: 4vw;
+    color: rgb(49, 47, 47);
+    height: 100%;
+    width: 50%;
+}
+.page3 h2{
+    line-height: 5.2vw;
+    font-size: 10vw;
+    letter-spacing: -.6vw;
+}
+
+.page3 h3{
+    font-size: 7.5vw;
+    letter-spacing: -0.4vw;
+
+    padding-bottom: 1.5vw;
+}
+ .page3 p{ 
+    padding-left: 1vw;
+    width: 75%;
+    font-size: 2vw;
+    text-align: justify;
+    font-family: "Bonheur Royale", cursive;
+     
+ }
+ 
+ .pag3r{ 
+    width: 50%;
+    height: 100%; 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+ }
+ .bgimg{ 
+    height: 98%;
+    width: 70%; 
+   
+ }
+ .bgimg img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 0% 50%;
+    
+ }
+ .page4{
+    margin-top: 10px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 4vw 2vw 4vw;
+    background: #b6ab8b6e;
+ }
+ .page4 h1{
+    font-size: 5vw;
+    letter-spacing: 1.2vw;
+    color: crimson;
+ }
+ .collections{ 
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     
+ }
+ .colimg1{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgb(254, 226, 98);
+    border-right: 7px solid rgb(254, 226, 98);
+    height: 70%;
+    width: 22%; 
+    transform: rotate(5deg);
+ }
+ .colimg1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .colimg2{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgb(254, 226, 98);
+    border-right: 7px solid rgb(254, 226, 98);
+    height: 58%;
+    width: 22%; 
+    transform: rotate(-2deg);
+ }
+ .colimg2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+ .colimg3{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgb(254, 226, 98);
+    border-right: 7px solid rgb(254, 226, 98);
+    height: 72%;
+    width: 22%; 
+    transform: rotate(4deg);
+ }
+ .colimg3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+ .colimg4{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom: 7px solid rgb(254, 226, 98);
+    border-right: 7px solid rgb(254, 226, 98);
+    height: 60%;
+    width: 22%; 
+    transform: rotate(8deg);
+ }
+ .colimg4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+ .btn{
+    position: relative;
+    top:-60px;
+    display: flex;
+    gap: 20px;
+    
+ }
+ .page4 button{
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 9px 15px;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ .page4 button i{
+    border-radius: 50%;
+    padding: 7px 8px;
+    background-color: rgb(255, 221, 71);
+    transform: rotate(-30deg);
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+
+ }
+ .page4 button:hover{
+    color: black;
+    background-color: rgb(255, 221, 71);
+    
+ }
+
+ .page4 button:hover i{
+    background-color: black;
+    transform: rotate(-50deg);
+    color: rgb(255, 221, 71);
+ }
+
+ .page5{
+    height: 100vh;
+    width: 100%;
+    background: crimson;    
+    color: #fff;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+ 
+.elem{  
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.elem h2{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+    line-height: 5vw;
+    font-style: normal;
+}
+
+.elem .moving{ 
+    width: 100%;
+    white-space: nowrap;
+    padding: 0.5vw 0;
+    background-color: rgb(255, 221, 71);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) scaleY(0);
+    transition: all ease 0.4s;
+     
+    
+}
+.elem .blur{
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgb(255, 221, 71), #f5e31bf5);
+    box-shadow: 10px 0 20px  #f5e41b, -80px 0 20px #f5e41b;
+    z-index: 100;
+}
+.elem .moving .moving-in{
+    display: inline-block;
+    white-space: nowrap;
+    padding: 2px 0;
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.elem .moving .moving-in h5{ 
+    color: black;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 550;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    transition: all ease 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+@keyframes moving {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.elem:hover .moving{
+    transform: translate(0, -50%) scaleY(1);
+}
+.elem:hover .moving h5{
+     
+    opacity: 1;
+}
+.elem:hover h2{
+    color: #000;
+    font-style: italic;
+}
+
+
+.page6{
+    padding: 2vh 25vh;
+    margin-top: 2vw;
+    height: auto;
+    width: 100%; 
+}
+ 
+#fheading >h1{
+    line-height: 1;
+    font-size: 4vw;
+    font-weight: 400;
+}
+#fheading >h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+#fimages{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+   
+}
+#fleft{
+    overflow: hidden;
+    width: 45%;
+    height: inherit; 
+        
+}
+.fleftelem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.fleftelem h1{
+    font-size: 2vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.6vw 0;
+}
+.fleftelem h3{
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "Bonheur Royale", cursive;
+
+}
+.fleftelem h4{
+    opacity: 0.5;
+}
+
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    min-height: inherit;
+     
+}
+#fright .images{
+    width: 90%;
+    height: 90%;
+}
+ #fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+
+ .page7{    
+    padding-top: 5vw;
+    height: 100vh;
+    width: 100%; 
+    background-color: #b6ab8b6e;
+ }
+ .footp1{
+    padding-left: 4vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+    background: #000;
+ }
+.footp1 svg{
+    filter: invert(1);
+    height: 8vw; 
+}
+.first{
+    padding-top: 4vw;     
+    text-align: center;
+    height: 100%;
+    width: 65%; 
+    color: white;
+}
+.first h3{
+    font-size: 4vw;
+}
+.first p{  
+    font-size: 1.1vw;
+}
+.input{
+    padding-top: 1vw;
+}
+.input input{ 
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 1vw;    
+}
+.input button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f5e52f;
+    font-size: 1vw;   
+}
+.footp2 {
+    padding: 2vw 4vw;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(33, 33, 33);
+}
+
+.footp2 h1 {
+    padding-bottom: 1vw;
+}
+
+.footp2 p {
+    position: relative; /* Required for positioning the ::before pseudo-element */
+    font-size: 1.2vw;
+    padding-bottom: 0.3vw;
+    cursor: pointer; /* Adding cursor pointer for hover effect */
+    overflow: hidden; /* Hides the pseudo-element initially */
+}
+
+.footp2 p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Initially, the border will be invisible */
+    height: 3px;
+    background-color: rgb(251, 252, 163);
+    transition: width 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.footp2 p:hover::before {
+    width: 60%; /* On hover, the border will expand to 100% */
+}
+
+
+.icon{
+    gap: 5px;
+    font-size: 2vw;
+}
+.icon {
+    gap: 5px;
+    font-size: 2vw;
+}
+
+
+/* Applying hover effect to each icon */
+.icon:hover  .fa-whatsapp {
+    color: green; /* Change the color as per your design */
+}
+
+.icon:hover .fa-facebook {
+    color: blue; /* Change the color as per your design */
+}
+
+.icon:hover .fa-instagram {
+    color: rgb(191, 19, 47); /* Change the color as per your design */
+}
+
+.icon:hover .fa-pinterest {
+    color: red; /* Change the color as per your design */
+}
